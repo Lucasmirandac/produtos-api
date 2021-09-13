@@ -3,6 +3,7 @@ import { Column, DataType, Table } from "sequelize-typescript";
 
 @Table
 export class Livro extends Model<Livro>{
+  [x: string]: any;
   @Column({
     type: DataType.STRING(60),
     allowNull: false,
